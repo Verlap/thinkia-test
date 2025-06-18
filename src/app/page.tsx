@@ -122,7 +122,7 @@ export default function Home() {
             alt="Linea de atención"
           />
         </section>
-        <footer className="flex justify-between text-grey pb-[77px] pt-[72px]">
+        <footer className="container flex justify-between text-grey pb-[77px] pt-[72px]">
           <span>©2023 Tramicar. Todos los derechos reservados.</span>
           <Navbar />
         </footer>
