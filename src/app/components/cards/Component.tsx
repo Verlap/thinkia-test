@@ -49,7 +49,7 @@ export default function Component() {
     <div className="w-full flex mb-[69px]">
       {cards.map((card: CardProps, index: number) => {
         return (
-          <div className="flex grow flex-col items-center">
+          <div className="flex grow flex-col items-center" key={index}>
             <img className="mb-[30px]" width={card.width} height={card.height} src={`/assets/icons/${card.icon}.png`}/>
             <h4 className="font-bold text-8 mb-4">{card.title}</h4>
             <p className="text-base w-[200px]">{card.label}</p>
