@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-indigo: rgba(89, 86, 233, 1);
+  --color-blue: rgba(63, 101, 240, 1);
+  --color-cian: rgba(103, 191, 249, 1);
+  --color-blue-grey: rgba(228, 231, 250, 0.52);
+  --color-grey: rgba(145, 144, 144, 1);
+  --color-black: rgba(39, 45, 56, 1);
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+html,body{
+  color: var(--color-black);
+}
