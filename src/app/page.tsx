@@ -8,8 +8,7 @@ import Navbar from "@/app/components/navbar/Component";
 export default function Home() {
   return (
     <div className="flex flex-col items-center font-[family-name:var(--font-poppins)]">
-      <div className="w-[1431px]">
-        <header className="container mt-[88px] ">
+        <header className="container py-16">
           <Image
             src={"/assets/logos/isotipo.png"}
             width={80}
@@ -17,28 +16,28 @@ export default function Home() {
             alt="Logo de Tramicar"
           />
         </header>
-        <main className="container max flex relative mt-[112px] mb-[99px]">
-          <div className="w-[728px]">
-            <h1 className="font-bold leading-[52px] text-[46px] mb-[36px]">
+        <main className="container flex relative my-30">
+          <div className="w-3/5">
+            <h1 className="font-bold leading-[52px] text-[46px] mb-8">
               <b>
                 <span className="text-indigo">Esto es una prueba</span>
               </b>{" "}
               para demostrar tus capacidades de{" "}
               <span className="text-indigo">maquetación</span>
             </h1>
-            <p className="ms-2 font-medium text-[19px] leading-[24px] w-[599px] text-blue mb-[28px]">
+            <p className="font-medium text-[19px] leading-[24px] w-[599px] text-blue mb-6">
               Solo pagarás los impuestos (ITP) y tasas (DGT).
               <br />
               Línea Directa te regala el 100% de los gastos de gestión*
             </p>
-            <p className="ms-2 text-[19px] leading-[24px] w-[538px] mb-[14px]">
+            <p className="text-[19px] leading-[24px] w-[538px] mb-6">
               En Tramicar, tenemos un equipo de profesionales listos para
               gestionar el cambio de nombre de tu vehículo de manera
               completamente online, desde cualquier lugar y en cualquier momento
               del año.
             </p>
 
-            <button className="flex gap-[10px] rounded-[10px] py-[20px] px-[38px] bg-indigo text-white font-bold cursor-pointer ms-[30px]">
+            <button className="flex gap-[10px] rounded-[10px] py-5 px-8 bg-indigo text-white font-bold cursor-pointer">
               Realiza tu trámite ahora
               <ArrowRight />
             </button>
@@ -48,33 +47,33 @@ export default function Home() {
             width={606}
             height={462}
             alt=""
-            className="absolute right-0"
+            className="absolute right-0 top-0"
           />
         </main>
-        <section className="bg-blue-grey rounded-[30px] pt-[89px] pb-[65px] ps-[56px] pe-[53px] text-center flex flex-col items-center mb-[96px]">
+        <section className="container flex flex-col items-center bg-blue-grey rounded-[30px] text-center my-30 p-16">
           <h2 className="font-semibold text-[44px] leading-[48px] w-[773px] mb-[82px]">
             <span className="text-indigo">Pasos</span> para hacer la
             transferencia de tu coche con nosotros:
           </h2>
           <Stepper />
-          <button className="flex gap-[10px] rounded-[10px] py-[20px] px-[38px] bg-indigo text-white font-bold cursor-pointer ms-[30px]">
+          <button className="flex gap-[10px] rounded-[10px] py-5 px-8 bg-indigo text-white font-bold cursor-pointer">
             Realiza tu trámite
             <ArrowRight />
           </button>
         </section>
-        <section className="text-center flex flex-col items-center mb-[96px]">
+        <section className="container text-center flex flex-col items-center my-30">
           <h2 className="font-semibold text-[44px] leading-[48px] w-[723px] mb-[82px]">
             <span className="text-indigo">Ventajas</span> de hacer el cambio de
             titularidad online con Tramicar.
           </h2>
           <Cards />
-          <button className="flex gap-[10px] rounded-[10px] py-[20px] px-[38px] bg-indigo text-white font-bold cursor-pointer ms-[30px]">
+          <button className="flex gap-[10px] rounded-[10px] py-5 px-8 bg-indigo text-white font-bold cursor-pointer">
             Realiza tu trámite
             <ArrowRight />
           </button>
         </section>
-        <hr className="opacity-13" />
-        <section className="mt-[29px] mb-[15px]">
+        <hr className="opacity-13 w-full container" />
+        <section className="container my-16">
           <p className="text-[14px] leading-[24px] tracking-[-1.1%] text-blue">
             *Línea Directa asume únicamente los gastos de gestión del servicio
             “transferencia estándar”. En el caso de que desees contratar nuestro
@@ -108,7 +107,7 @@ export default function Home() {
             proporcionando cobertura legal desde el primer momento.
           </p>
         </section>
-        <section className="w-full flex items-center justify-center gap-[91px]">
+        <section className="w-full flex items-center justify-center gap-24">
           <Image
             src={"/assets/logos/imagotipo.png"}
             width={250}
@@ -122,11 +121,10 @@ export default function Home() {
             alt="Linea de atención"
           />
         </section>
-        <footer className="flex justify-between text-grey pb-[77px] pt-[72px]">
+        <footer className="container flex justify-between text-grey pb-[77px] pt-[72px]">
           <span>©2023 Tramicar. Todos los derechos reservados.</span>
           <Navbar />
         </footer>
-      </div>
     </div>
   );
 }

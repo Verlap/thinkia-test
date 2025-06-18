@@ -59,14 +59,14 @@ export default function Component() {
         const stepNumber = index + 1;
         return (
           <div className="flex grow flex-col items-center relative" key={index}>
-            <h4 className="font-bold text-[20xp] mb-6">{step.title}</h4>
+            <h4 className="font-bold text-[20xp] mb-4">{step.title}</h4>
             <span
               className={`${lineStyle} line h-px bg-cian absolute translate-y-19 z-1`}
             ></span>
-            <div className="rounded-full flex items-center justify-center w-[61px] h-[61px] bg-indigo text-white text-[30px] mb-[40px] relative z-2">
+            <div className="rounded-full flex items-center justify-center w-[61px] h-[61px] bg-indigo text-white text-[30px] mb-6 relative z-2">
               {stepNumber}
             </div>
-            <p className="text-base w-[288px]">{step.label}</p>
+            <p className="text-base px-8">{step.label}</p>
           </div>
         );
       })}
